@@ -49,7 +49,8 @@ tools/deploy.py --options "launch create-images"
 ```
 
 Flash BSP Images
-***Note: This will not generate the any images, please use create-images option
+
+***Note: This will not generate images, please use create-images option
    to generate images***
 ```bash
 tools/deploy.py --options "aurix-device /dev/ttyUSB3" -o "launch flash-images"
