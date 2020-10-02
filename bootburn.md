@@ -37,33 +37,25 @@ NVIDIA Bootburn copies the configuration to a new location:
 
 ## Usage
 
-```text
 Clean and Flash using bootburn.
 Generated images will be removed after flashing
-```
 ```bash
 tools/deploy.py --options "aurix-device /dev/ttyUSB3"
 ```
 
-```text
 Create BSP Images
-```
 ```bash
 tools/deploy.py --options "launch create-images"
 ```
 
-```text
 Flash BSP Images (This will reuse the previously generated images and not
 generate the new images)
-```
 ```bash
 tools/deploy.py --options "aurix-device /dev/ttyUSB3" -o "launch flash-images"
 ```
 
-```text
 Make binding. Make binding compile the dts and generate the security images
 (e.g tos.img)
-```
 ```bash
 tools/deploy.py --options "launch make-bind"
 ```
